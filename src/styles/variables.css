@@ -1,0 +1,70 @@
+/* Custom Design System Tokens for SkillVerse */
+
+:root {
+  /* HSL Color Mappings for Transparent Alpha Modification */
+  --primary-h: 206;
+  --primary-s: 39%;
+  --primary-l: 62%;
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  
+  --secondary-h: 14;
+  --secondary-s: 40%;
+  --secondary-l: 16%;
+  --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+  
+  --bg-h: 202;
+  --bg-s: 39%;
+  --bg-l: 88%;
+  --bg: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+  
+  --accent-h: 26;
+  --accent-s: 54%;
+  --accent-l: 82%;
+  --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  
+  --neutral-h: 23;
+  --neutral-s: 21%;
+  --neutral-l: 48%;
+  --neutral: hsl(var(--neutral-h), var(--neutral-s), var(--neutral-l));
+
+  /* Light Theme Utilities */
+  --text-dark: #221d1b;
+  --text-light: #f6f8fa;
+  --text-muted: #5e524d;
+  
+  /* Glassmorphism Presets */
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-bg-hover: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(121, 163, 195, 0.12);
+  --glass-blur: blur(12px);
+
+  /* Spacing & Sizing */
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Tokens (Can be dynamically toggled via class on body) */
+body.dark-mode {
+  --bg-h: 202;
+  --bg-s: 30%;
+  --bg-l: 12%;
+  --bg: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+  
+  --text-dark: #f6f8fa;
+  --text-light: #221d1b;
+  --text-muted: #abb1b8;
+
+  --glass-bg: rgba(26, 22, 21, 0.65);
+  --glass-bg-hover: rgba(26, 22, 21, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-blur: blur(16px);
+}
